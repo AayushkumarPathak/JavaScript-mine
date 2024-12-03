@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer | Project1</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .button{
+        height: 6.2rem;
+        width:6.2rem;
+        border:  black;
+        border-width: 5px;
+        border-style:groove;
+        
+
+    }
+    #burlywood{
+        background: burlywood;
+    }
+    #violet{
+        background-color: violet;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+</style>
+<body style="background-color: #212121; color: #fff;">
+    <div class="container">
+        <h1 style="color:#fff;"class="head1">Color Scheme Switch</h1>
+        <span class="button" id="burlywood"></span>
+        <span class="button" id="violet"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+
+    </div>
+    <h2 style="text-align: center;">Try changing the Background color, by clicking the color box.</h2>
+    <script src="script.js"></script>
+    
+</body>
+</html>
