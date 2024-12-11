@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Color changer</title>
+    <style>
+        main{
+            margin: 20px;
+            padding: 20px;
+        }
+        body{
+            background-color: #313131;
+            color: #ffffff;
+        }
+        button{
+            margin: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            border: solid gray;
+            width: 100px;
+            font-size: larger;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: rgb(92, 153, 244);
+        }
+        button:hover{
+            background-color: rgb(19, 245, 19);
+        }
+        #colorDiv{
+            width: 100%;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Background Color Simulation</h1>
+        <div id="colorDiv">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
