@@ -4,12 +4,12 @@ const user = {
 
     welcomeMsg: function(){
         console.log(`${this.username}, Welcome to Website`);
-        console.log(this);
+        console.log("This context",this);
         
     }
 }
 
-// user.welcomeMsg();
+user.welcomeMsg();
 // user.username = "akash";
 // user.welcomeMsg();
 // console.log(this); //empty object in ide engine ||

@@ -35,6 +35,7 @@ const obj1 = {1:"one",2:"two"}
 const obj2 = {3:"three",4:"four"}
 const obj3 = {4:"four",5:"five"}
 const assignedObject = Object.assign({},obj1,obj2,obj3) 
+
 // it return object as copy
 // {} -> is optional parameter -> acts as a target object -> good syntax practice 
 console.log(assignedObject);

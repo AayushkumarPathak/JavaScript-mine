@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#title{
+   font-size: 2em;
+   margin: 10px;
+   margin-top: -10px; 
+}
+
+#container {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Use full height of the viewport */
+    background-color: cornflowerblue;
+}
+
+#calculator-container {
+    padding: 20px;
+    height: 25rem;           
+    width: 25rem;             
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;    
+    color: white;             
+    text-align: center;
+    border-radius: 8px; 
+}
+
+#output {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 4px 0 gray, 0 6px 5px 0 gray;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    color: #2d6a4f;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px; /* Controls gap between table cells */
+    table-layout: fixed;
+}
+
+td {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #414141;
+    box-shadow: 0 4px 4px 0 gray, 0 6px 5px 0 gray;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+td.button:hover {
+    background-color: gainsboro;
+    transform: scale(1.1);
+}
+
+td.operator {
+    background-color: #ff6f61; /* Red for operators */
+}
+
+td.clear {
+    background-color: #f4a261; /* Light orange for C */
+}
+
+td.equal {
+    background-color: #2d6a4f; /* Green for = */
+}
+
+td.button:active {
+    background-color: #555;
+}
+
+td, th {
+    padding: 10px;
+}
+
+/* Optional: Make the table responsive for smaller screens */
+@media (max-width: 600px) {
+    #calculator-container {
+        width: 90%;
+    }
+    td {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

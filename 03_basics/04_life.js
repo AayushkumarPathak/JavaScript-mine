@@ -1,6 +1,6 @@
 // Immediately Invoked Function Expression(IIFE)
 //  1.
-(function connectDb(){
+;(function connectDb(){
     console.log("Db connected.");
 })(); 
 
@@ -18,5 +18,5 @@
     console.log(`Db connection made by ${name}`);
     
 })('admin');
-
+// good practice to make a semicolon before starting IIFE
 
